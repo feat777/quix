@@ -26,14 +26,14 @@ tubesock		tubesock://%r											Download video with <a href="http://stinkbot.c
 
 tube    https://www.youtube.com/results?search_query=%s        Seach Yutube
 send javascript:(function(){m='http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=su='+encodeURIComponent(%t)+'&body='+encodeURIComponent(%t);w=window.open(m,'addwindow','status=no,toolbar=no,width=575,height=545,resizable=yes');setTimeout(function(){w.focus();}, 250);})(); Send by Gmail
-gm https://mail.google.com/mail/h/?s=q&q=%s Search in Gmail
-fr http://www.linguee.fr/francais-anglais/search?source=auto&query=%s Search for French word
-nl http://www.linguee.nl/nederlands-engels/search?source=auto&query=%s Search for Dutch word
+gm https://mail.google.com/mail/u/0/#search/%s Search in Gmail ???
+fr http://www.linguee.fr/francais-anglais/search?source=auto&query=%s Search for French word OK
+nl http://www.linguee.nl/nederlands-engels/search?source=auto&query=%s Search for Dutch word OK
 
 
 
 
-isgd javascript:void(location.href='http://is.gd/create.php?longurl='+encodeURIComponent(%r)) Shorten with ISGD
+isgd http://is.gd/create.php?longurl=%r Shorten with ISGD ???
 wf  javascript:%28function%28s%29%7Btry%7Bs=document.selection.createRange%28%29.text%7Dcatch%28_%29%7Bs=document.getSelection%28%29%7Dprompt%28%27Markdown Title%27,%27%5b%27+%t+%27%5d%28%27+%r+%27%29%27%29%7D%29%28%29
 
 
