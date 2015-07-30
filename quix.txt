@@ -5,10 +5,11 @@
 > For the syntax of this file, please refer to https://www.quixapp.com/syntax/
 >
 
+#kill-defaults
+
 @Basic commands
 @These are the most basic commands Quix offers, but possibly also the most powerful ones.
-d       http://www.google.com/search?q=define:%s							Google Define a word
-dict	http://www.google.com/dictionary?langpair=en%7Cen&q=%s&hl=en&aq=f	Google Dictionary for a word
+
 e       mailto:?subject=%t&body=%s%0A%0A%09%r%0A%0A							Email link
 find		javascript:s='%s';if(s==''){void(s=prompt('Find%20text:',''));}s='('+s+')';x=new%20RegExp(s,'gi');rn=Math.floor(Math.random()*100);rid='z'%20+%20rn;b%20=%20document.body.innerHTML;b=b.replace(x,'<span%20name='%20+%20rid%20+%20'%20id='%20+%20rid%20+%20'%20style=\'color:#000;background-color:yellow;%20font-weight:bold;\'>$1</span>');void(document.body.innerHTML=b);alert('Found%20'%20+%20document.getElementsByName(rid).length%20+%20'%20matches.');window.scrollTo(0,document.getElementsByName(rid)[0].offsetTop); 	Find in current pagem, usage: 'find test' will highlight all occurrences of 'test' and will take you to the first occurrence. Just 'find' will open a prompt.
 g       http://www.google.com/search?q=%s									Google Search
@@ -20,31 +21,17 @@ tr      http://translate.google.com/translate?u=%r&tl=%s					Translate the curre
 w       http://wikipedia.org/wiki/Special:Search/%s_         				Wikipedia Search
 read 	script://www.readability.com/bookmarklet/read.js					Readability
 
-@Social commands
-@These commands are for dealing with social networks and social sites.
-
-@WordPress
-
-@SEO
-
-@Webmaster
-@Webmasters often have dozens of bookmarklets for all sorts of simple checks, Quix replaces a <em>lot</em> of those bookmarklets by giving you simple to remember commands to deal with them.
-
-@URL Shortening
-@A group of URL shorteners
-bitly		http://bit.ly/?v=3&u=%re&s=%s%20%te					Shorten with <a href="http://bit.ly/">bit.ly</a>
-awesm		http://create.awe.sm/url/share?target=%re&version=1 	Shorten with <a href="http://awe.sm/">awe.sm</a>
-googl		script:https://www.quixapp.com/js/quix-googl.js				Shorten with Goo.gl
-
-@App Integration commands
-@Integrate with cool programs on all platforms.
 evernote		javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();		Clip current page with <a href="http://www.evernote.com/">Evernote</a>
 tubesock		tubesock://%r											Download video with <a href="http://stinkbot.com/Tubesock/">Tubesock</a>
 
-@Custom commands
-
 tube    https://www.youtube.com/results?search_query=%s        Seach Yutube
-gm javascript:(function(){m='http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=su='+encodeURIComponent(%t)+'&body='+encodeURIComponent(%t);w=window.open(m,'addwindow','status=no,toolbar=no,width=575,height=545,resizable=yes');setTimeout(function(){w.focus();}, 250);})(); Send by Gmail
+send javascript:(function(){m='http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=su='+encodeURIComponent(%t)+'&body='+encodeURIComponent(%t);w=window.open(m,'addwindow','status=no,toolbar=no,width=575,height=545,resizable=yes');setTimeout(function(){w.focus();}, 250);})(); Send by Gmail
+gm https://mail.google.com/mail/h/?s=q&q=%s Search in Gmail
+fr http://www.linguee.fr/francais-anglais/search?source=auto&query=%s Search for French word
+nl http://www.linguee.nl/nederlands-engels/search?source=auto&query=%s Search for Dutch word
+
+
+
 
 isgd javascript:void(location.href='http://is.gd/create.php?longurl='+encodeURIComponent(%r)) Shorten with ISGD
 wf  javascript:%28function%28s%29%7Btry%7Bs=document.selection.createRange%28%29.text%7Dcatch%28_%29%7Bs=document.getSelection%28%29%7Dprompt%28%27Markdown Title%27,%27%5b%27+%t+%27%5d%28%27+%r+%27%29%27%29%7D%29%28%29
