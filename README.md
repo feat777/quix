@@ -1,0 +1,2 @@
+# quix
+quixsettings
