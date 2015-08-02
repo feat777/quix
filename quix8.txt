@@ -25,7 +25,8 @@ evernote		javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%
 tubesock		tubesock://%r											Download video with <a href="http://stinkbot.com/Tubesock/">Tubesock</a>
 
 tube    https://www.youtube.com/results?search_query=%s        Seach Yutube OK
-send    http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=%s&su=%t&body=%r Send by Gmail ???
+send    http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=%s&su=%t&body=%r Send by Gmail OK
+td http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=project.121304648.1459580@todoist.net&su=%t%r%s Send to Todoist ???
 gm https://mail.google.com/mail/u/0/#search/%s Search in Gmail OK
 fr http://www.linguee.fr/francais-anglais/search?source=auto&query=%s Search for French word OK
 nl http://www.linguee.nl/nederlands-engels/search?source=auto&query=%s Search for Dutch word OK
