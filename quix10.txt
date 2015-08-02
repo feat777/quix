@@ -26,12 +26,13 @@ tubesock		tubesock://%r											Download video with <a href="http://stinkbot.c
 
 tube    https://www.youtube.com/results?search_query=%s        Seach Yutube OK
 send    http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=%s&su=%t&body=%r Send by Gmail OK
-td http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=project.121304648.1459580@todoist.net&su=%t%20%r%20%s Send to Todoist ???
+td http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=project.121304648.1459580@todoist.net&su=%t%20%r%20%s Send to Todoist OK
+
 gm https://mail.google.com/mail/u/0/#search/%s Search in Gmail OK
 fr http://www.linguee.fr/francais-anglais/search?source=auto&query=%s Search for French word OK
 nl http://www.linguee.nl/nederlands-engels/search?source=auto&query=%s Search for Dutch word OK
 
-p javascript:(function(){ISRIL_H='8fc9';PKT_D='getpocket.com';ISRIL_SCRIPT=document.createElement('SCRIPT');ISRIL_SCRIPT.type='text/javascript';ISRIL_SCRIPT.src='http://'+PKT_D+'/b/r.js';document.getElementsByTagName('head')[0].appendChild(ISRIL_SCRIPT)})(); Send to Pocket ???
+p http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=add@getpocket.com&su=%t&body=%r Send to Pocket ???
 
 
 isgd http://is.gd/create.php?longurl=%r Shorten with ISGD OK
